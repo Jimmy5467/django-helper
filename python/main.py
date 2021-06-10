@@ -11,7 +11,7 @@ for line in fin:
     pattern = r'\".*?\"'
     if re.findall(pattern, line):
         ori = re.findall(pattern, line)[0]
-        if ori.find("css") or ori.find("scss") or ori.find("html") or ori.find("js"):
+        if ori.find("svg") or ori.find("jpg") or ori.find("jepg") or ori.find("png") or ori.find("css") or ori.find("scss") or ori.find("html") or ori.find("js"):
             changed = "'{% static " + ori + " %}'"
             # read replace the string and write to output file
             fout.write(line.replace(ori, changed))
