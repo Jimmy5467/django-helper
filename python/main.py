@@ -1,25 +1,22 @@
-import os
-import sys
+################ dont forget to add {% load static %} in head section ###############3
+
 import fileinput
+import re
 
-print("Text to search for:")
-textToSearch = input("> ")
-
-print("Text to replace it with:")
-textToReplace = input("> ")
-
-print("File to perform Search-Replace on:")
 fileToSearch = input("> ")
-# fileToSearch = 'D:\dummy1.txt'
-# Read in the file
-with open(fileToSearch, 'r') as file:
-    filedata = file.read()
+fin = open(fileToSearch, "rt")  # for e.g: ../dummy.html
+fout = open("../out.html", "wt")
 
-# Replace the target string
-filedata = filedata.replace(textToSearch, textToReplace)
-
-# Write the file out again
-with open(fileToSearch, 'w') as file:
-    file.write(filedata)
-
-input('\n\n Press Enter to exit...')
+for line in fin:
+    pattern = r'\".*?\"'
+    if re.findall(pattern, line):
+        ori = re.findall(pattern, line)[0]
+        if ori.find("css") or ori.find("scss") or ori.find("html") or ori.find("js"):
+            changed = "'{% static " + ori + " %}'"
+            # read replace the string and write to output file
+            fout.write(line.replace(ori, changed))
+    else:
+        fout.write(line)
+# close input and output files
+fin.close()
+fout.close()
