@@ -20,3 +20,9 @@ for line in fin:
 # close input and output files
 fin.close()
 fout.close()
+
+
+# 1. make requiremnet.txt
+# 2. make dajngo webiste
+# 3. use heroku
+# 4. make user interface
