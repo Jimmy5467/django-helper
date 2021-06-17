@@ -23,6 +23,7 @@ fout.close()
 
 
 # 1. make requiremnet.txt
+#   add git ignore
 # 2. make dajngo webiste
 # 3. use heroku
 # 4. make user interface
