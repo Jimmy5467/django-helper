@@ -27,3 +27,4 @@ Just run Main.py and add the path of the file in which you want to do the above 
 2. In all other place where static should not be added, use single single  Quotes. for example : 'UTF-8'
 3. At the top of the file you have to add load static by yourself, it not be added by this program.
 
+If you have any doubt, then first try using dummy.html file, which is there in this repository. If you have any issue then feel free to riase issue in this repo, and if you have any suggestion then you can mail me.
