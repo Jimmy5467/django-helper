@@ -15,3 +15,8 @@
 
 Application for helping easy combine of frontend and backend.
 
+### Some points to remmebr before using
+1. Use Double Quotes("), where you want to add static. 
+2. In all other place where static should not be added, use single single  Quotes(').
+3. At the top of the file you have to add load static by yourself, it not be added by this program.
+
