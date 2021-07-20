@@ -15,8 +15,15 @@
 
 Application for helping easy combine of frontend and backend.
 
+### What this program will do ?
+By this program we can add static with parenthesis and percentage symbol, which is the most hectic part in combining of frontend, when frontend is in HTML. for example, we have written in HTML like this href="hello.html", but as we have to use static after combineing with backend. so, it will look like this href='{% static "hello.html" %}'. So,  this program will help to this conversion. 
+
+
+### How to Use?
+Just run Main.py and add the path of the file in which you want to do the above conversion, and one new file name out.html will be generated and in that all conversion is done.
+
 ### Some points to remmebr before using
-1. Use Double Quotes("), where you want to add static. 
-2. In all other place where static should not be added, use single single  Quotes(').
+1. Use Double Quotes, where you want to add static. for example: "index.html"
+2. In all other place where static should not be added, use single single  Quotes. for example : 'UTF-8'
 3. At the top of the file you have to add load static by yourself, it not be added by this program.
 
